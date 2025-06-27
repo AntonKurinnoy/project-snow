@@ -79,10 +79,10 @@ body {
 
 /*MAIN SECTION*/
 .main_header {
-    padding: 20px;
     background-color: var(--background_second);
     border-radius: 0 0 24px 24px;
     margin-bottom: 20px;
+    padding: 50px 20px 20px;
 }
 
 .player-overview {

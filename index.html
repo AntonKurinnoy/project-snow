@@ -1,1 +1,447 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Document</title><script src="https://telegram.org/js/telegram-web-app.js"></script><script defer="defer" src="index.js"></script><link href="index.css" rel="stylesheet"></head><body><div class="main"><div class="spinner" id="spinner"><div class="spinner1"></div></div><div class="app" id="app"><div class="app__features" id="features"><div class="features"><span class="white_text">1111111</span></div></div><div class="app__main--active" id="main"><div class="app__main_all"><div class="avatar card"><img id="user-avatar" alt="User Avatar"></div><div class="user_stat"><div class="user-profile"><h2 class="white_text" id="user-name"></h2></div><div class="user-stats"><p class="white_text">Wins<span id="user-wins"></span></p><p class="white_text">Losses<span id="user-losses"></span></p><p class="white_text">Draws<span id="user-draws"></span></p></div></div></div></div><div class="app__gamepad" id="gamepad"><div class="gamepad"><p class="title">PLAY WITH</p><p class="ai_icon"><label class="icon_text white_text" id="ai">AI</label></p><p class="pvp_icon" id="pvp"><svg width="80" height="80" viewBox="0 0 25 24" fill="#e6e9f5" xmlns="http://www.w3.org/2000/svg" transform="rotate(0 0 0)"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.4337 6.35C16.4337 8.74 14.4937 10.69 12.0937 10.69L12.0837 10.68C9.69365 10.68 7.74365 8.73 7.74365 6.34C7.74365 3.95 9.70365 2 12.0937 2C14.4837 2 16.4337 3.96 16.4337 6.35ZM14.9337 6.34C14.9337 4.78 13.6637 3.5 12.0937 3.5C10.5337 3.5 9.25365 4.78 9.25365 6.34C9.25365 7.9 10.5337 9.18 12.0937 9.18C13.6537 9.18 14.9337 7.9 14.9337 6.34Z" fill="#e6e9f5"/><path d="M12.0235 12.1895C14.6935 12.1895 16.7835 12.9395 18.2335 14.4195V14.4095C20.2801 16.4956 20.2739 19.2563 20.2735 19.4344L20.2735 19.4395C20.2635 19.8495 19.9335 20.1795 19.5235 20.1795H19.5135C19.0935 20.1695 18.7735 19.8295 18.7735 19.4195C18.7735 19.3695 18.7735 17.0895 17.1535 15.4495C15.9935 14.2795 14.2635 13.6795 12.0235 13.6795C9.78346 13.6795 8.05346 14.2795 6.89346 15.4495C5.27346 17.0995 5.27346 19.3995 5.27346 19.4195C5.27346 19.8295 4.94346 20.1795 4.53346 20.1795C4.17346 20.1995 3.77346 19.8595 3.77346 19.4495L3.77345 19.4448C3.77305 19.2771 3.76646 16.506 5.81346 14.4195C7.26346 12.9395 9.35346 12.1895 12.0235 12.1895Z" fill="#e6e9f5"/></svg></p><p class="turnir_icon"><svg id="tournament" width="80" height="80" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#e6e9f5" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0"/></svg></p><div class="div_play_display"><span class="white_text">3333333</span></div></div><div class="game"><div class="tablo"><div class="avatar card"><img id="player1-avatar" alt="Player 1 Avatar"></div><div class="score"><p class="score" id="score">0:0</p></div><div class="avatar card"><img id="player2-avatar" src="images/ai-avatar.png" alt="Player 2 Avatar"></div></div><div class="playground"><textarea id="matchLog"></textarea></div></div></div><div class="app__nav"><nav class="nav" id="nav"><div class="filter-switch" id="firstFilter"><input class="nav__item" id="option1" name="options" type="radio" data-nav="features"> <label class="option" for="option1"><img class="menu__img" src="images/features.png" alt=""></label> <input class="nav__item" checked="checked" id="option2" name="options" type="radio" data-nav="main"> <label class="option" for="option2"><img class="menu__img" src="images/friends.png" alt=""></label> <input class="nav__item" id="option3" name="options" type="radio" data-nav="gamepad"> <label class="option" for="option3"><img class="menu__img" src="images/gamepad.png" alt=""></label><span class="background"></span></div></nav></div></div></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Manager</title>
+    <link rel="stylesheet" href="index.css">
+
+
+</head>
+<body>
+<div class="content">
+    <!-- Game Statistics Section -->
+    <section id="statistics" class="section">
+        <div class="sub-tabs">
+            <button class="sub-tab active" data-tab="team-performance">Team Performance</button>
+            <button class="sub-tab" data-tab="player-statistics">Player Statistics</button>
+            <button class="sub-tab" data-tab="league-standings">League Standings</button>
+        </div>
+
+        <!-- Team Performance -->
+        <div id="team-performance" class="sub-content active">
+            <div class="card">
+                <table class="data-table">
+                    <tr>
+                        <th>Matches</th>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <th>Wins</th>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <th>Draws</th>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <th>Losses</th>
+                        <td>5</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Player Statistics -->
+        <div id="player-statistics" class="sub-content">
+            <div class="card">
+                <table class="data-table">
+                    <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Goals</th>
+                        <th>Assists</th>
+                        <th>Rating</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>John Smith</td>
+                        <td>12</td>
+                        <td>8</td>
+                        <td>8.5</td>
+                    </tr>
+                    <tr>
+                        <td>Mike Johnson</td>
+                        <td>8</td>
+                        <td>12</td>
+                        <td>8.2</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- League Standings -->
+        <div id="league-standings" class="sub-content">
+            <div class="card">
+                <table class="data-table">
+                    <thead>
+                    <tr>
+                        <th>Position</th>
+                        <th>Team</th>
+                        <th>Points</th>
+                        <th>GD</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Your Team</td>
+                        <td>50</td>
+                        <td>+25</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Rival FC</td>
+                        <td>47</td>
+                        <td>+20</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- Infrastructure Section -->
+    <section id="infrastructure" class="section">
+        <!-- Content remains the same -->
+        <!--<div class="card">
+            <div class="card-image"></div>
+            <h3>Training Facility</h3>
+            <p>Level 3</p>
+            <p>Upgrade cost: $1,000,000</p>
+            <button class="btn">Upgrade</button>
+        </div>
+        <div class="card">
+            <div class="card-image"></div>
+            <h3>Stadium</h3>
+            <p>Level 2</p>
+            <p>Upgrade cost: $2,500,000</p>
+            <button class="btn">Upgrade</button>
+        </div>-->
+
+        <div class="infrastructure-block" id="infrastructure-container">
+            <ul class="infrastructure-ul" data-current="0">
+                <li>
+                    <div class="infrastructure-card office">
+                        <img class="infrastructure-img-office" src="images/infrastructure/office/office3.png" alt="">
+                        <div class="infrastructure-card-name">OFFICE</div>
+                        <p class="hidden-field">Hidden Line 1</p>
+                        <p class="second-text">Line 2</p>
+                        <p class="hidden-field">Hidden Line 2</p>
+                        <p class="second-text">Line 3</p>
+                        <p class="hidden-field">Hidden Line 3</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="infrastructure-card stadium">
+                        <img class="infrastructure-img-stadium" src="images/infrastructure/stadium/stadium1.png" alt="">
+                        <div class="infrastructure-card-name">STADIUM</div>
+                        <p class="hidden-field">Hidden Line 1</p>
+                        <p class="second-text">Line 2</p>
+                        <p class="hidden-field">Hidden Line 2</p>
+                        <p class="second-text">Line 3</p>
+                        <p class="hidden-field">Hidden Line 3</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="infrastructure-card medical-centre">
+                        <img class="infrastructure-img-medical-centre" src="images/infrastructure/medical_centre/medicalCentre_red2.png" alt="">
+                        <div class="infrastructure-card-name-medical-centre">Medical Centre</div>
+                        <p class="hidden-field">Hidden Line 1</p>
+                        <p class="second-text">Line 2</p>
+                        <p class="hidden-field">Hidden Line 2</p>
+                        <p class="second-text">Line 3</p>
+                        <p class="hidden-field">Hidden Line 3</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="infrastructure-card training-center">
+                        <img class="infrastructure-img-training-center" src="images/infrastructure/training_center/trainingCenter2.png" alt="">
+                        <div class="infrastructure-card-name-training-center">TRAINING CENTER</div>
+                        <p class="hidden-field">Hidden Line 1</p>
+                        <p class="second-text">Line 2</p>
+                        <p class="hidden-field">Hidden Line 2</p>
+                        <p class="second-text">Line 3</p>
+                        <p class="hidden-field">Hidden Line 3</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+    </section>
+
+    <!--     Main Window Section -->
+    <section id="main" class="section active">
+        <div class="main_header">
+            <div class="player-overview">
+                <div class="player-header">
+                    <img class="club-avatar" src="images/ManU.svg" alt="avatar">
+                    <!--                    <img class="player-avatar" src="images/bayern.png" alt="avatar">-->
+                    <!--                    <img class="player-avatar" src="images/monkey.png" alt="avatar">-->
+                    <!--                    <img class="player-avatar" src="images/Chelsea_FC.svg" alt="avatar">-->
+                    <!--                    <img class="player-avatar" src="images/306px-Logo_of_AC_Milan.svg.png" alt="avatar">-->
+                    <!--                    <img class="player-avatar" src="images/FC_Barcelona_(crest).svg" alt="avatar">-->
+                    <!--                    <img class="player-avatar" src="images/FC_Real_Madrid_Logo.svg" alt="avatar">-->
+                    <div class="player-info">
+                        <div class="player-name">
+                            <h2>Manager Name</h2>
+                            <p class="player-team-name">Team: Red Dragons FC</p>
+                        </div>
+                        <div class="player-stats">
+                            <div class="stat-item">
+                                <div class="stat-value">15</div>
+                                <div class="stat-label">Wins</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">5</div>
+                                <div class="stat-label">Draws</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-value">5</div>
+                                <div class="stat-label">Losses</div>
+                            </div>
+                        </div>
+                        <!--                        <div class="player-stats">-->
+                        <!--                            <div class="stat-item">-->
+                        <!--                                <div class="stat-value"><button class="stat-value-button">15</button></div>-->
+                        <!--                                <div class="stat-label">Wins</div>-->
+                        <!--                            </div>-->
+                        <!--                            <div class="stat-item">-->
+                        <!--                                <div class="stat-value"><button class="stat-value-button">5</button></div>-->
+                        <!--                                <div class="stat-label">Draws</div>-->
+                        <!--                            </div>-->
+                        <!--                            <div class="stat-item">-->
+                        <!--                                <div class="stat-value"><button class="stat-value-button">0</button></div>-->
+                        <!--                                <div class="stat-label">Losses</div>-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
+                        <div class="player-budget">
+                            <div class="balance">
+                                <img class="balance-icon" src="images/money-coin-svgrepo-com.svg" alt="">
+                                <!--                                <img class="balance-icon" src="images/money-svgrepo-com%20copy%202.svg" alt="">-->
+                                <!--                                <img class="balance-icon" src="images/money-svgrepo-com.svg" alt="">-->
+                                <span class="balance-separator">:</span>
+                                <span class="balance-sum">68,150.50</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="player-scores">
+                    <!--                    <div class="player-general-stats">-->
+                    <!--                        <div class="general-stat-item">-->
+                    <!--                            <div class="general-stat-value">148</div>-->
+                    <!--                            <div class="general-stat-label">Total Score</div>-->
+                    <!--                        </div>-->
+                    <!--                        <div class="general-stat-item">-->
+                    <!--                            <div class="general-stat-value">95</div>-->
+                    <!--                            <div class="general-stat-label">Team Score</div>-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
+                    <div class="player-general-stats">
+                        <div class="general-stat-item">
+                            <div class="general-stat-label">Total Score</div>
+                            <div class="general-stat-value">
+                                <button class="general-stat-value-button">148</button>
+                            </div>
+                        </div>
+                        <div class="general-stat-item">
+                            <div class="general-stat-label">Team Score</div>
+                            <div class="general-stat-value">
+                                <button class="general-stat-value-button">95</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main_sections_nav">
+            <div class="main_section_nav players active" data-section="main_section_players">Players</div>
+            <div class="main_section_nav field" data-section="main_section_field">Field</div>
+            <div class="main_section_nav trainings" data-section="main_section_trainings">Trainings</div>
+            <div class="main_section_nav stuff" data-section="main_section_stuff">Stuff</div>
+        </div>
+
+        <div class="main_body">
+            <section id="main_section_players" class="main_section active">
+                <!-- NEW CONTENT FOR PLAYERS TAB STARTS HERE -->
+                <!-- Player List View -->
+                <div id="player-list-view" class="bottom-margin">
+                    <div class="player-squad-section">
+                        <h3 class="squad-title">Main Squad</h3>
+                        <div id="attack-section" class="player-category-group">
+                            <h4 class="category-title-first">Attack</h4>
+                            <!-- Players will be dynamically inserted here -->
+                        </div>
+                        <div id="midfield-section" class="player-category-group">
+                            <h4 class="category-title">Midfield</h4>
+                            <!-- Players will be dynamically inserted here -->
+                        </div>
+                        <div id="defense-section" class="player-category-group">
+                            <h4 class="category-title">Defense</h4>
+                            <!-- Players will be dynamically inserted here -->
+                        </div>
+                        <div id="goalkeeper-section" class="player-category-group">
+                            <h4 class="category-title">Goalkeeper</h4>
+                            <!-- Players will be dynamically inserted here -->
+                        </div>
+                    </div>
+
+                    <div class="player-squad-section">
+                        <h3 class="squad-title">Substitutes</h3>
+                        <div id="substitutes-section" class="player-category-group">
+                            <!-- Players will be dynamically inserted here -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Player Detail View (initially hidden) -->
+                <div class="player-detail-view bottom-margin hidden">
+                  <!-- Player detailed view will be loaded here dynamically -->
+                    <button class="btn close-player-detail danger">Back to List</button>
+                  <div class="player-detail-content"></div>
+<!--                  <div class="player-detail-content glass"></div>-->
+                </div>
+<!--                <div id="player-detail-view" class="player-detail-container hidden">-->
+<!--                    <button class="close-detail-btn">&times;</button>-->
+<!--                    <div class="detail-card">-->
+<!--                        <img id="detail-player-avatar" src="" alt="Player Avatar" class="detail-player-avatar">-->
+<!--                        <h2 id="detail-player-name" class="detail-player-name"></h2>-->
+<!--                        <p class="detail-player-info"><span id="detail-player-position"></span> | Skill: <span id="detail-player-skill"></span></p>-->
+<!--                        <p class="detail-player-info">Market Value: <span id="detail-player-market-value"></span></p>-->
+<!--                        <div class="detail-actions">-->
+<!--                            <button class="btn swap-player-btn">Change Player</button>-->
+<!--                            &lt;!&ndash; Add more detailed stats here if needed &ndash;&gt;-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+                <!-- NEW CONTENT FOR PLAYERS TAB ENDS HERE -->
+            </section>
+<!--            <section id="main_section_players" class="main_section active">-->
+<!--                <div class="cards-grid">-->
+<!--                    <div class="info-card glass animate-in" style="animation-delay: 0.1s">-->
+<!--                        <h3>Team Rating</h3>-->
+<!--                        <div class="value">82.5</div>-->
+<!--                    </div>-->
+<!--                    <div class="info-card glass animate-in" style="animation-delay: 0.2s">-->
+<!--                        <h3>Form</h3>-->
+<!--                        <div class="value">↑ 2.54x</div>-->
+<!--                    </div>-->
+<!--                    <div class="info-card glass animate-in" style="animation-delay: 0.3s">-->
+<!--                        <h3>League Position</h3>-->
+<!--                        <div class="value">#3</div>-->
+<!--                    </div>-->
+<!--                    <div class="info-card glass animate-in" style="animation-delay: 0.1s">-->
+<!--                        <h3>Team Rating</h3>-->
+<!--                        <div class="value">82.5</div>-->
+<!--                    </div>-->
+<!--                    <div class="info-card glass animate-in" style="animation-delay: 0.2s">-->
+<!--                        <h3>Form</h3>-->
+<!--                        <div class="value">↑ 2.54x</div>-->
+<!--                    </div>-->
+<!--                    <div class="info-card glass animate-in" style="animation-delay: 0.3s">-->
+<!--                        <h3>League Position</h3>-->
+<!--                        <div class="value">#3</div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </section>-->
+
+
+            <section id="main_section_field" class="main_section">
+                <div class="cards-grid">
+                    <div class="info-card glass animate-in" style="animation-delay: 0.1s">
+                        <h3>Team Rating</h3>
+                        <div class="value">82.5</div>
+                    </div>
+                    <div class="info-card glass animate-in" style="animation-delay: 0.2s">
+                        <h3>Form</h3>
+                        <div class="value">↑ 2.54x</div>
+                    </div>
+                    <div class="info-card glass animate-in" style="animation-delay: 0.3s">
+                        <h3>League Position</h3>
+                        <div class="value">#3</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="main_section_trainings" class="main_section">
+                <h3>asdad</h3>
+            </section>
+
+            <section id="main_section_stuff" class="main_section">
+                <h3>123123</h3>
+            </section>
+        </div>
+
+    </section>
+
+    <!-- Player Exchange Section -->
+    <section id="transfer" class="section">
+        <!-- Content remains the same -->
+        <div class="card">
+            <div class="card-image"></div>
+            <h3>John Smith</h3>
+            <p>Forward | Skill: 85</p>
+            <p>Price: $5,000,000</p>
+            <button class="btn">View Details</button>
+        </div>
+    </section>
+
+    <!-- Tournaments Section -->
+    <section id="matches" class="section">
+        <!-- Content remains the same -->
+        <div class="card">
+            <h3>Match Against Computer</h3>
+            <button class="btn">Start Match</button>
+        </div>
+        <div class="card">
+            <h3>Match Against Player</h3>
+            <button class="btn">Find Match</button>
+        </div>
+        <div class="card">
+            <h3>Enter Tournament</h3>
+            <button class="btn">Enter</button>
+        </div>
+    </section>
+</div>
+
+
+<!--        -->
+
+
+<!--        -->
+
+
+<!-- Bottom Navigation -->
+<nav class="bottom-nav glass_border">
+    <a href="#" class="nav-item" data-section="statistics">
+        <div class="nav-icon">📊</div>
+        <span class="nav-text">Statistics</span>
+    </a>
+    <a href="#" class="nav-item" data-section="infrastructure">
+        <div class="nav-icon">🏗</div>
+        <span class="nav-text">Upgrade</span>
+    </a>
+    <a href="#" class="nav-item active" data-section="main">
+        <div class="nav-icon">⚽</div>
+        <span class="nav-text">Main</span>
+    </a>
+    <a href="#" class="nav-item" data-section="transfer">
+        <div class="nav-icon">🔄</div>
+        <span class="nav-text">Transfer</span>
+    </a>
+    <a href="#" class="nav-item" data-section="matches">
+        <div class="nav-icon">🏆</div>
+        <span class="nav-text">Matches</span>
+    </a>
+</nav>
+
+
+<script type="text/javascript" src="index.js"></script>
+<script src="infrastructure.js"></script>
+<script src="main.js"></script>
+<script src="main_section_players.js"></script>
+</body>
+</html>

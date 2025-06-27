@@ -247,8 +247,9 @@ body {
     color: var(--success-green);
 }
 
-.main_sections_nav {
-    padding: 16px;
+/*.main_sections_nav {
+    padding-top: 16px;
+    padding-bottom: 16px;
     display: flex;
     justify-content: center;
     gap: 12px;
@@ -265,26 +266,92 @@ body {
 
 .main_sections_nav > .players.active {
     background: #4F7CFF;
-    /*color: var(--text);*/
-    /*font-weight: 500;*/
+    !*color: var(--text);*!
+    !*font-weight: 500;*!
 }
 
 .main_sections_nav > .field.active {
     background: #4DFF4D;
-    /*color: var(--text);*/
-    /*font-weight: 500;*/
+    !*color: var(--text);*!
+    !*font-weight: 500;*!
 }
 
 .main_sections_nav > .trainings.active {
     background: #6F32FF;
-    /*color: var(--text);*/
-    /*font-weight: 500;*/
+    !*color: var(--text);*!
+    !*font-weight: 500;*!
 }
 
 .main_sections_nav > .stuff.active {
     background: #F65164;
-    /*color: var(--text);*/
-    /*font-weight: 500;*/
+    !*color: var(--text);*!
+    !*font-weight: 500;*!
+}*/
+
+.main_sections_nav {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.main_section_nav {
+    position: relative;
+    padding: 8px 16px;
+    border-radius: 12px;
+    background: var(--surface-light);
+    color: var(--text);
+    font-weight: 500;
+    cursor: pointer;
+    overflow: hidden;
+    background: var(--surface-light);
+    z-index: 1;
+}
+
+.main_section_nav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 100%;
+    border-radius: 12px;
+    transform: translateX(-50%);
+    transition: width 0.4s ease;
+    z-index: -1;
+}
+
+.main_sections_nav > .players::before {
+    background: #4F7CFF;
+}
+
+.main_sections_nav > .field::before {
+    background: #4DFF4D;
+}
+
+.main_sections_nav > .trainings::before {
+    background: #6F32FF;
+}
+
+.main_sections_nav > .stuff::before {
+    background: #F65164;
+}
+
+.main_sections_nav > .players.active::before,
+.main_sections_nav > .field.active::before,
+.main_sections_nav > .trainings.active::before,
+.main_sections_nav > .stuff.active::before {
+    width: 100%;
+}
+
+.main_sections_nav > .players.active,
+.main_sections_nav > .field.active,
+.main_sections_nav > .trainings.active,
+.main_sections_nav > .stuff.active {
+    color: white;
+    background: transparent;
 }
 
 /*.main_section.active {*/

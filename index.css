@@ -22,6 +22,7 @@
     --danger-red: #FF6B6B; /* Added for consistency */
     --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 
+    --stat-value: #5C98FF;
 
     --border-color: rgba(255, 255, 255, 0.2); /* Slightly more opaque white for the border */
     --shadow-color: rgba(0, 0, 0, 0.2); /* Soft shadow */
@@ -138,7 +139,7 @@ body {
     font-size: 25px;
     font-weight: bold;
     /*color: #6361D9;*/
-    color: #5C98FF;
+    color: var(--stat-value);
     text-shadow: 2px 2px 5px rgba(21, 21, 105, 0.3);
     /*color: var(--text);*/
     border: 1px solid #4F7CFF;
@@ -220,12 +221,17 @@ body {
 }
 
 .general-stat-label-name {
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Subtle shadow for depth */
+    font-weight: bold;
     font-size: 25px;
     color: var(--text);
 }
 
 .general-stat-label-score {
-    font-size: 25px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    /*font-size: 25px;*/
     color: var(--text-secondary);
 }
 

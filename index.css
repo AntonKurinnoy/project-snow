@@ -62,7 +62,7 @@ body {
     background-color: var(--background_second);
     border-radius: 0 0 24px 24px;
     margin-bottom: 20px;
-    padding: 80px 20px 20px;
+    padding: 80px 20px 0px;
     box-shadow: var(--box-shadow);
 }
 
@@ -170,6 +170,7 @@ body {
 .stat-label {
     font-size: 15px;
     /*color: #8a8b96;*/
+    /*color: var(--text);*/
     color: var(--text-secondary);
 }
 
@@ -184,7 +185,7 @@ body {
     border: none;
     background-color: transparent;
     color: var(--text);
-    /*color: var(--background_third);*/
+    /*color: var(--danger-red);*/
     font-size: 50px;
     font-weight: 600;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 35%);
@@ -218,7 +219,12 @@ body {
     /*box-shadow: 0px 10px 10px rgb(1, 49, 182);*/
 }
 
-.general-stat-label {
+.general-stat-label-name {
+    font-size: 25px;
+    color: var(--text);
+}
+
+.general-stat-label-score {
     font-size: 25px;
     color: var(--text-secondary);
 }

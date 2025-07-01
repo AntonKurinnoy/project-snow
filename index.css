@@ -20,6 +20,7 @@
     --text-secondary: #8A8D9B;
     --success-green: #4CAF50;
     --danger-red: #FF6B6B; /* Added for consistency */
+    --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 
 
     --border-color: rgba(255, 255, 255, 0.2); /* Slightly more opaque white for the border */
@@ -62,6 +63,7 @@ body {
     border-radius: 0 0 24px 24px;
     margin-bottom: 20px;
     padding: 50px 20px 20px;
+    box-shadow: var(--box-shadow);
 }
 
 .player-overview {
@@ -87,9 +89,31 @@ body {
     /*font-weight: bold;*/
 }
 
+.player-manager-name {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 2px;
+}
+
 .player-team-name {
+    font-size: 16px;
     color: var(--text-secondary);
     margin-top: 1px;
+}
+
+@media (max-width: 400px) {
+    .player-manager-name {
+        font-size: 22px;
+        font-weight: 600;
+        color: var(--text);
+        margin-bottom: 2px;
+    }
+    .player-team-name {
+       font-size: 14px;
+       color: var(--text-secondary);
+       margin-top: 1px;
+    }
 }
 
 .player-stats {
@@ -208,6 +232,7 @@ body {
     margin-top: 15px;
     max-width: fit-content;
     font-size: 19px;
+    box-shadow: var(--box-shadow);
 }
 
 .balance-icon {
@@ -243,6 +268,7 @@ body {
     cursor: pointer;
     overflow: hidden;
     background: var(--surface-light);
+    box-shadow: var(--box-shadow);
     z-index: 1;
 }
 
@@ -521,13 +547,6 @@ body {
 
 .player-info-main {
     flex-grow: 1;
-}
-
-.player-name {
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--text);
-    margin-bottom: 2px;
 }
 
 .player-position {

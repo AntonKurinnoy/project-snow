@@ -44,6 +44,9 @@ let fontIndex  = 0;
 const allLabels = document.querySelectorAll(
   ".general-stat-label-name-total, .general-stat-label-name-team"
 );
+const allLabels2 = document.querySelectorAll(
+  ".general-stat-label-name-total, .general-stat-label-name-team, .general-stat-value-button",
+);
 
 // helper to apply next color
 function cycleColor() {
@@ -56,7 +59,7 @@ function cycleColor() {
 // helper to apply next font
 function cycleFont() {
   fontIndex = (fontIndex + 1) % fonts.length;
-  allLabels.forEach(el => {
+  allLabels2.forEach(el => {
     el.style.fontFamily = fonts[fontIndex];
   });
 }

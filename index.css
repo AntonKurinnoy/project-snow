@@ -19,7 +19,6 @@
     --text: #FFFFFF;
     --text-secondary: #8A8D9B;
     --success-green: #4CAF50;
-    --danger-red: #FF6B6B; /* Added for consistency */
     --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 
     --stat-value: #5C98FF;
@@ -186,7 +185,6 @@ body {
     border: none;
     background-color: transparent;
     color: var(--text);
-    /*color: var(--danger-red);*/
     font-size: 50px;
     font-weight: 600;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 35%);
@@ -197,6 +195,8 @@ body {
     align-items: center;
     transform: translate3d(0px, 0px, 15px) perspective(180px) rotateX(-35deg) translateY(2px);
     border-radius: 50%;
+    font-family: 'FugazOne', sans-serif;
+    /*filter: invert(100%);*/
 }
 
 .general-stat-value {
@@ -220,12 +220,142 @@ body {
     /*box-shadow: 0px 10px 10px rgb(1, 49, 182);*/
 }
 
-.general-stat-label-name {
-    font-family: 'Montserrat', sans-serif;
+@font-face {
+    font-family: 'sakana'; /* A name you choose for the font family */
+    src: url('fonts/sakana.regular.ttf') format('truetype');  /* Path to your TTF file */
+    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
+    font-style: normal;        /* Font style (e.g., normal, italic) */
+}
+@font-face {
+    font-family: 'Audiowide'; /* A name you choose for the font family */
+    src: url('fonts/Audiowide-Regular.ttf') format('truetype');  /* Path to your TTF file */
+    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
+    font-style: normal;        /* Font style (e.g., normal, italic) */
+}
+@font-face {
+    font-family: 'BakbakOne'; /* A name you choose for the font family */
+    src: url('fonts/BakbakOne-Regular.ttf') format('truetype');  /* Path to your TTF file */
+    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
+    font-style: normal;        /* Font style (e.g., normal, italic) */
+}
+@font-face {
+    font-family: 'SUSE'; /* A name you choose for the font family */
+    src: url('fonts/SUSE-VariableFont_wght.ttf') format('truetype');  /* Path to your TTF file */
+    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
+    font-style: normal;        /* Font style (e.g., normal, italic) */
+}
+@font-face {
+    font-family: 'SUSE-bold'; /* A name you choose for the font family */
+    src: url('fonts/static/SUSE-Bold.ttf') format('truetype');  /* Path to your TTF file */
+    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
+    font-style: normal;        /* Font style (e.g., normal, italic) */
+}
+@font-face {
+    font-family: 'Tourney'; /* A name you choose for the font family */
+    src: url('fonts/Tourney-VariableFont_wdth,wght.ttf') format('truetype');  /* Path to your TTF file */
+    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
+    font-style: normal;        /* Font style (e.g., normal, italic) */
+}
+@font-face {
+    font-family: 'Nabla'; /* A name you choose for the font family */
+    src: url('fonts/Nabla-Regular-VariableFont_EDPT,EHLT.ttf') format('truetype');  /* Path to your TTF file */
+    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
+    font-style: normal;        /* Font style (e.g., normal, italic) */
+}
+@font-face {
+    font-family: 'Monofett'; /* A name you choose for the font family */
+    src: url('fonts/Monofett-Regular.ttf') format('truetype');  /* Path to your TTF file */
+    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
+    font-style: normal;        /* Font style (e.g., normal, italic) */
+}
+@font-face {
+    font-family: 'BungeeShade'; /* A name you choose for the font family */
+    src: url('fonts/BungeeShade-Regular.ttf') format('truetype');  /* Path to your TTF file */
+    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
+    font-style: normal;        /* Font style (e.g., normal, italic) */
+}
+@font-face {
+    font-family: 'BungeeSpice'; /* A name you choose for the font family */
+    src: url('fonts/BungeeSpice-Regular.ttf') format('truetype');  /* Path to your TTF file */
+    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
+    font-style: normal;        /* Font style (e.g., normal, italic) */
+}
+@font-face {
+    font-family: 'Workbench'; /* A name you choose for the font family */
+    src: url('fonts/Workbench-Regular-VariableFont_BLED,SCAN.ttf') format('truetype');  /* Path to your TTF file */
+    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
+    font-style: normal;        /* Font style (e.g., normal, italic) */
+}
+@font-face {
+    font-family: 'Sixtyfour'; /* A name you choose for the font family */
+    src: url('fonts/Sixtyfour-Regular-VariableFont_BLED,SCAN.ttf') format('truetype');  /* Path to your TTF file */
+    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
+    font-style: normal;        /* Font style (e.g., normal, italic) */
+}
+@font-face {
+    font-family: 'SixtyfourConvergence'; /* A name you choose for the font family */
+    src: url('fonts/SixtyfourConvergence-Regular-VariableFont_BLED,SCAN,XELA,YELA.ttf') format('truetype');  /* Path to your TTF file */
+    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
+    font-style: normal;        /* Font style (e.g., normal, italic) */
+}
+@font-face {
+    font-family: 'Sriracha'; /* A name you choose for the font family */
+    src: url('fonts/Sriracha-Regular.ttf') format('truetype');  /* Path to your TTF file */
+    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
+    font-style: normal;        /* Font style (e.g., normal, italic) */
+}
+@font-face {
+    font-family: 'FugazOne'; /* A name you choose for the font family */
+    src: url('fonts/FugazOne-Regular.ttf') format('truetype');  /* Path to your TTF file */
+    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
+    font-style: normal;        /* Font style (e.g., normal, italic) */
+}
+
+.general-stat-label-name-total, .general-stat-label-name-team {
+    font-family: 'FugazOne', sans-serif;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Subtle shadow for depth */
     font-weight: bold;
-    font-size: 25px;
+    font-size: 30px;
     color: var(--text);
+    /*color: #9f2b5b;*/
+    /*color: #5D3F90;*/
+    /*color: #3B7EFF;*/
+    /*color: #75C16E;*/
+    /*color: #9C84FF;*/
+    /*color: #FFB300;*/
+    /*color: #FFD700;*/
+    /*color: #4DB6AC;*/
+    /*color: #00BCD4;*/
+    /*color: #1976D2;*/
+    /*color: #3F51B5;*/
+    /*color: #3B7EFF;*/
+    /*color: #AEEA00;*/
+    /*color: #CDDC39;*/
+    /*filter: invert(100%);*/
+}
+
+/* 1) define the shimmer keyframes */
+@keyframes text-shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+/* 2) create a reusable shimmer utility class */
+.shimmer {
+  /* make the text transparent so we can show the moving gradient through it */
+  color: transparent;
+  /* clip the moving background to the text glyphs */
+  -webkit-background-clip: text;
+          background-clip: text;
+  /* a wide, narrow gradient */
+  background-image: linear-gradient(
+    to right,
+    rgba(255,255,255,0.2) 0%,
+    rgba(255,255,255,0.8) 50%,
+    rgba(255,255,255,0.2) 100%
+  );
+  background-size: 200% auto;
+  animation: text-shimmer 2s linear infinite;
 }
 
 .general-stat-label-score {
@@ -604,7 +734,7 @@ body {
 }
 
 .btn.danger {
-    background-color: var(--danger-red);
+    background-color: var(--accent-red);
 }
 
 .btn.danger:hover {

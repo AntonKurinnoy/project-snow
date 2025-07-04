@@ -67,7 +67,7 @@ body {
 }
 
 .player-overview {
-    padding: 16px;
+    padding: 16px 16px 10px 16px;
 }
 
 .player-header {
@@ -316,6 +316,7 @@ body {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Subtle shadow for depth */
     font-weight: bold;
     font-size: 30px;
+    height: 35px;
     /*color: var(--text);*/
     /*color: #9f2b5b;*/
     /*color: #5D3F90;*/
@@ -336,13 +337,13 @@ body {
 
 @keyframes text-shimmer {
     0% {
-        background-position: 0% center;
+        background-position: 100% center;
     }
     20% {
-        background-position: 150% center;
+        background-position: -50% center;
     }
     100% {
-        background-position: 150% center;
+        background-position: -50% center;
     }
 }
 

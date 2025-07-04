@@ -331,7 +331,7 @@ body {
     font-family: 'FugazOne', sans-serif;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Subtle shadow for depth */
     font-weight: bold;
-    font-size: 30px;
+    font-size: 32px;
     height: 35px;
     /*color: var(--text);*/
     /*color: #9f2b5b;*/
@@ -503,7 +503,7 @@ body {
 }
 
 .infrastructure-ul > li {
-    height: 320px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -523,8 +523,8 @@ body {
 }
 
 .infrastructure-ul .infrastructure-card {
-    height: 250px;
-    width: 200px;
+    height: 350px;
+    width: 300px;
     border-radius: 20px;
     color: white;
     cursor: pointer;
@@ -540,7 +540,8 @@ body {
 
 .infrastructure-ul .infrastructure-card.expanded {
     /*transform: scale(2.1, 2.1);*/
-    transform: scale(1.5, 1.5);
+    /*transform: scale(1.5, 1.5);*/
+    transform: scale(1.2, 1.2);
     z-index: 2;
 }
 
@@ -553,7 +554,7 @@ body {
     width: 120%;
     height: auto;
     position: relative;
-    top: -20%;
+    top: -25%;
     left: -10%;
 }
 
@@ -722,7 +723,7 @@ body {
     text-align: right;
 }
 
-.player-skill, .player-market-value {
+.player-skill, .player-health, .player-market-value {
     font-size: 14px;
     font-weight: 500;
     color: var(--text);
@@ -730,6 +731,13 @@ body {
 
 .player-skill {
     color: var(--accent-blue);
+}
+
+.player-health {
+    color: var(--success-green);
+    /*color: #9f2b5b;*/
+    /*color: #c52a6a;*/
+    margin-top: 2px;
 }
 
 .player-market-value {

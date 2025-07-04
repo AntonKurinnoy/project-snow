@@ -523,8 +523,8 @@ body {
 }
 
 .infrastructure-ul .infrastructure-card {
-    height: 350px;
-    width: 300px;
+    height: 300px;
+    width: 250px;
     border-radius: 20px;
     color: white;
     cursor: pointer;
@@ -554,7 +554,7 @@ body {
     width: 120%;
     height: auto;
     position: relative;
-    top: -25%;
+    top: -20%;
     left: -10%;
 }
 

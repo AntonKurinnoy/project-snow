@@ -67,13 +67,27 @@ body {
 }
 
 .player-overview {
-    padding: 16px 16px 10px 16px;
+    padding: 16px 10px 10px 10px;
 }
 
 .player-header {
     display: flex;
+    /*align-items: center;*/
+    /*gap: 16px;*/
+}
+
+.player-club-avatar, .player-info {
+    width: 50%;
+    box-sizing: border-box;
+    margin: 2px;
+}
+
+.player-club-avatar {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 16px;
+    border-radius: 20%;
+    box-shadow: var(--box-shadow);
 }
 
 .club-avatar {
@@ -83,8 +97,8 @@ body {
     /*border: 2px solid var(--accent-blue);*/
     /*background-color: var(--primary);*/
     /*display: flex;*/
-    align-items: center;
-    justify-content: center;
+    /*align-items: center;*/
+    /*justify-content: center;*/
     /*font-size: 24px;*/
     /*font-weight: bold;*/
 }
@@ -364,6 +378,11 @@ body {
     font-weight: 300;
     /*font-size: 25px;*/
     color: var(--text-secondary);
+}
+
+.player-budget {
+    display: flex;
+    justify-content: center;
 }
 
 .balance {

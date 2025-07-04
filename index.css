@@ -554,7 +554,8 @@ body {
     width: 120%;
     height: auto;
     position: relative;
-    top: -20%;
+    /*top: -20%;*/
+    top: -70px;
     left: -10%;
 }
 
@@ -562,7 +563,8 @@ body {
     width: 120%;
     height: auto;
     position: relative;
-    top: -20%;
+    /*top: -20%;*/
+    transform: translateY(-50%);
     left: -10%;
 }
 

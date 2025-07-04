@@ -316,7 +316,7 @@ body {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Subtle shadow for depth */
     font-weight: bold;
     font-size: 30px;
-    color: var(--text);
+    /*color: var(--text);*/
     /*color: #9f2b5b;*/
     /*color: #5D3F90;*/
     /*color: #3B7EFF;*/
@@ -334,29 +334,29 @@ body {
     /*filter: invert(100%);*/
 }
 
-/* 1) define the shimmer keyframes */
 @keyframes text-shimmer {
-  0%   { background-position: -200% center; }
-  100% { background-position: 200% center; }
+    0% {
+        background-position: 0% center;
+    }
+    20% {
+        background-position: 150% center;
+    }
+    100% {
+        background-position: 150% center;
+    }
 }
 
-/* 2) create a reusable shimmer utility class */
 .shimmer {
-  /* make the text transparent so we can show the moving gradient through it */
-  color: transparent;
-  /* clip the moving background to the text glyphs */
-  -webkit-background-clip: text;
-          background-clip: text;
-  /* a wide, narrow gradient */
-  background-image: linear-gradient(
-    to right,
-    rgba(255,255,255,0.2) 0%,
-    rgba(255,255,255,0.8) 50%,
-    rgba(255,255,255,0.2) 100%
-  );
-  background-size: 200% auto;
-  animation: text-shimmer 2s linear infinite;
+    color: #ffb300;
+    background-image: linear-gradient(to right, #ffb300 0%, #ffb300 30%, #ffffff 50%, #ffb300 70%, #ffb300 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: text-shimmer 6s ease-in-out infinite;
+    text-shadow: none;
 }
+
 
 .general-stat-label-score {
     font-family: 'Roboto Condensed', sans-serif;

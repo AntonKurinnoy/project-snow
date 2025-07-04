@@ -62,7 +62,7 @@ body {
     background-color: var(--background_second);
     border-radius: 0 0 24px 24px;
     margin-bottom: 20px;
-    padding: 80px 20px 0px;
+    padding: 80px 0 0;
     box-shadow: var(--box-shadow);
 }
 
@@ -118,13 +118,13 @@ body {
 
 @media (max-width: 400px) {
     .player-manager-name {
-        font-size: 22px;
+        font-size: 25px;
         font-weight: 600;
         color: var(--text);
         margin-bottom: 2px;
     }
     .player-team-name {
-       font-size: 14px;
+       font-size: 15px;
        color: var(--text-secondary);
        margin-top: 1px;
     }
@@ -138,9 +138,11 @@ body {
 }
 
 .player-general-stats {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
+    display: flex;
+    justify-content: center;
+    /*display: grid;*/
+    /*grid-template-columns: repeat(2, 1fr);*/
+    /*gap: 12px;*/
     margin-top: 15px;
 }
 

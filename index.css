@@ -554,8 +554,7 @@ body {
     width: 120%;
     height: auto;
     position: relative;
-    /*top: -20%;*/
-    top: -70px;
+    transform: translateY(-60%);
     left: -10%;
 }
 
@@ -563,7 +562,6 @@ body {
     width: 120%;
     height: auto;
     position: relative;
-    /*top: -20%;*/
     transform: translateY(-50%);
     left: -10%;
 }
@@ -572,7 +570,7 @@ body {
     width: 100%;
     height: auto;
     position: relative;
-    top: -30%;
+    transform: translateY(-55%);
     left: 2%;
 }
 
@@ -580,7 +578,7 @@ body {
     width: 120%;
     height: auto;
     position: relative;
-    top: -20%;
+    transform: translateY(-50%);
     left: -10%;
 }
 

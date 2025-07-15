@@ -22,26 +22,24 @@ document.addEventListener( "DOMContentLoaded", function() {
         card.addEventListener('click', clickEventListener);
     });
 
-    var clientHeight = document.documentElement.clientHeight
+    let clientHeight = document.documentElement.clientHeight
     // it's a div, that holds your news
     // it holds ul with news in li elements
-    var div = document.getElementById( "infrastructure-container" );
+    let div = document.getElementById( "infrastructure-container" );
     div.style.height = clientHeight + "px";
     div.addEventListener( "scroll", function() {
-        var max_scroll = this.scrollHeight - this.clientHeight;
-        var current_scroll = this.scrollTop;
+        let max_scroll = this.scrollHeight - this.clientHeight;
+        let current_scroll = this.scrollTop;
         // console.log("scrollHeight: " + this.scrollHeight + " clientHeight: " + this.clientHeight + " max_scroll: " + max_scroll + " current_scroll: " + current_scroll);
-        var bottom = 10;
+        let bottom = 10;
         if ( current_scroll + bottom >= max_scroll ) {
-            var ul = document.getElementsByTagName( "ul" )[ 0 ];
-            var current = parseInt( ul.dataset.current, 10 );
-            var li = document.getElementsByTagName( "li" )[ current ];
-            var new_li = li.cloneNode( true );
+            let ul = div.getElementsByTagName("ul")[0];
+            let current = parseInt(ul.dataset.current, 10);
+            let li = ul.querySelectorAll('.infrastructure-li')[current];
+            let new_li = li.cloneNode( true );
             new_li.childNodes.item(1).addEventListener( "click", clickEventListener) //this part must be refactored
             ul.appendChild( new_li );
             ul.dataset.current = current + 1;
         }
     } );
 } );
-
-

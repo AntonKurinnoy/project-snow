@@ -237,90 +237,6 @@ body {
 }
 
 @font-face {
-    font-family: 'sakana'; /* A name you choose for the font family */
-    src: url('fonts/sakana.regular.ttf') format('truetype');  /* Path to your TTF file */
-    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
-    font-style: normal;        /* Font style (e.g., normal, italic) */
-}
-@font-face {
-    font-family: 'Audiowide'; /* A name you choose for the font family */
-    src: url('fonts/Audiowide-Regular.ttf') format('truetype');  /* Path to your TTF file */
-    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
-    font-style: normal;        /* Font style (e.g., normal, italic) */
-}
-@font-face {
-    font-family: 'BakbakOne'; /* A name you choose for the font family */
-    src: url('fonts/BakbakOne-Regular.ttf') format('truetype');  /* Path to your TTF file */
-    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
-    font-style: normal;        /* Font style (e.g., normal, italic) */
-}
-@font-face {
-    font-family: 'SUSE'; /* A name you choose for the font family */
-    src: url('fonts/SUSE-VariableFont_wght.ttf') format('truetype');  /* Path to your TTF file */
-    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
-    font-style: normal;        /* Font style (e.g., normal, italic) */
-}
-@font-face {
-    font-family: 'SUSE-bold'; /* A name you choose for the font family */
-    src: url('fonts/static/SUSE-Bold.ttf') format('truetype');  /* Path to your TTF file */
-    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
-    font-style: normal;        /* Font style (e.g., normal, italic) */
-}
-@font-face {
-    font-family: 'Tourney'; /* A name you choose for the font family */
-    src: url('fonts/Tourney-VariableFont_wdth,wght.ttf') format('truetype');  /* Path to your TTF file */
-    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
-    font-style: normal;        /* Font style (e.g., normal, italic) */
-}
-@font-face {
-    font-family: 'Nabla'; /* A name you choose for the font family */
-    src: url('fonts/Nabla-Regular-VariableFont_EDPT,EHLT.ttf') format('truetype');  /* Path to your TTF file */
-    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
-    font-style: normal;        /* Font style (e.g., normal, italic) */
-}
-@font-face {
-    font-family: 'Monofett'; /* A name you choose for the font family */
-    src: url('fonts/Monofett-Regular.ttf') format('truetype');  /* Path to your TTF file */
-    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
-    font-style: normal;        /* Font style (e.g., normal, italic) */
-}
-@font-face {
-    font-family: 'BungeeShade'; /* A name you choose for the font family */
-    src: url('fonts/BungeeShade-Regular.ttf') format('truetype');  /* Path to your TTF file */
-    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
-    font-style: normal;        /* Font style (e.g., normal, italic) */
-}
-@font-face {
-    font-family: 'BungeeSpice'; /* A name you choose for the font family */
-    src: url('fonts/BungeeSpice-Regular.ttf') format('truetype');  /* Path to your TTF file */
-    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
-    font-style: normal;        /* Font style (e.g., normal, italic) */
-}
-@font-face {
-    font-family: 'Workbench'; /* A name you choose for the font family */
-    src: url('fonts/Workbench-Regular-VariableFont_BLED,SCAN.ttf') format('truetype');  /* Path to your TTF file */
-    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
-    font-style: normal;        /* Font style (e.g., normal, italic) */
-}
-@font-face {
-    font-family: 'Sixtyfour'; /* A name you choose for the font family */
-    src: url('fonts/Sixtyfour-Regular-VariableFont_BLED,SCAN.ttf') format('truetype');  /* Path to your TTF file */
-    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
-    font-style: normal;        /* Font style (e.g., normal, italic) */
-}
-@font-face {
-    font-family: 'SixtyfourConvergence'; /* A name you choose for the font family */
-    src: url('fonts/SixtyfourConvergence-Regular-VariableFont_BLED,SCAN,XELA,YELA.ttf') format('truetype');  /* Path to your TTF file */
-    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
-    font-style: normal;        /* Font style (e.g., normal, italic) */
-}
-@font-face {
-    font-family: 'Sriracha'; /* A name you choose for the font family */
-    src: url('fonts/Sriracha-Regular.ttf') format('truetype');  /* Path to your TTF file */
-    font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
-    font-style: normal;        /* Font style (e.g., normal, italic) */
-}
-@font-face {
     font-family: 'FugazOne'; /* A name you choose for the font family */
     src: url('fonts/FugazOne-Regular.ttf') format('truetype');  /* Path to your TTF file */
     font-weight: normal;       /* Font weight (e.g., normal, bold, 100-900) */
@@ -333,22 +249,6 @@ body {
     font-weight: bold;
     font-size: 32px;
     height: 35px;
-    /*color: var(--text);*/
-    /*color: #9f2b5b;*/
-    /*color: #5D3F90;*/
-    /*color: #3B7EFF;*/
-    /*color: #75C16E;*/
-    /*color: #9C84FF;*/
-    /*color: #FFB300;*/
-    /*color: #FFD700;*/
-    /*color: #4DB6AC;*/
-    /*color: #00BCD4;*/
-    /*color: #1976D2;*/
-    /*color: #3F51B5;*/
-    /*color: #3B7EFF;*/
-    /*color: #AEEA00;*/
-    /*color: #CDDC39;*/
-    /*filter: invert(100%);*/
 }
 
 @keyframes text-shimmer {
@@ -529,19 +429,14 @@ body {
     color: white;
     cursor: pointer;
     transition: 400ms;
-    /*background: linear-gradient(170deg, rgba(58, 56, 56, 0.623) 0%, rgb(31, 31, 31) 100%);*/
     background: linear-gradient(170deg, var(--background_second) 0%, var(--background_third) 100%);
     box-shadow: 0 25px 50px rgba(0,0,0,0.55);
 }
 
-.infrastructure-ul .infrastructure-card.medical-centre{
-    margin-top: 30px;
-}
-
 .infrastructure-ul .infrastructure-card.expanded {
-    /*transform: scale(2.1, 2.1);*/
-    /*transform: scale(1.5, 1.5);*/
     transform: scale(1.2, 1.2);
+    height: 700px;
+    margin-top: 400px;
     z-index: 2;
 }
 
@@ -574,7 +469,7 @@ body {
     left: 2%;
 }
 
-.infrastructure-ul .infrastructure-card > .infrastructure-img-training-center {
+.infrastructure-ul .infrastructure-card > .infrastructure-img-training-centre {
     width: 120%;
     height: auto;
     position: relative;
@@ -585,28 +480,169 @@ body {
 .infrastructure-ul .infrastructure-card .infrastructure-card-name {
     position: relative;
     top: -20%;
-    font-size: 2em;
+    font-size: 1.9em;
     font-weight: 700;
     color: var(--text-secondary);
 }
+.infrastructure-ul .infrastructure-card.expanded .infrastructure-card-name {
+    color: var(--text);
+}
 
-.infrastructure-ul .infrastructure-card .infrastructure-card-name-medical-centre {
-    position: relative;
-    top: -23%;
-    font-size: 1.5em;
-    font-weight: 700;
+.infrastructure-ul .infrastructure-card .infrastructure-card-name.office{
+    font-size: 1.8em;
+}
+
+.infrastructure-ul .infrastructure-card .infrastructure-card-name.stadium{
+    top: -34%;
+}
+
+.infrastructure-ul .infrastructure-card .infrastructure-card-name.medical-centre{
+    top: -28%;
+    font-size: 1.7em;
+}
+
+.infrastructure-ul .infrastructure-card .infrastructure-card-name.training-centre{
+    top: -27%;
+    font-size: 1.6em;
+}
+
+/* Minimized view styles */
+.infrastructure-ul .infrastructure-card.expanded .minimized-info {
+    display: none;
+}
+.minimized-info {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.minimized-info .info-line {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: var(--text);
+}
+
+.minimized-info .info-line .label {
+    color: var(--text-secondary);
+    font-size: 0.8em;
+}
+
+.minimized-info .info-line .value {
+    color: var(--stat-value);
+    font-weight: bold;
+}
+
+/* Maximized view styles */
+.infrastructure-ul .infrastructure-card:not(.expanded) .maximized-info {
+    display: none;
+}
+
+.maximized-info {
+    max-height: 100%;
+    margin: -30% 15px 15px 15px;
+    text-align: left;
+}
+
+.maximized-info .level-badge {
+    display: inline-block;
+    background: var(--accent-blue);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.maximized-info .description {
+    color: var(--text-secondary);
+    font-size: 0.85em;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.maximized-info .benefits-section {
+    margin-bottom: 15px;
+}
+
+.maximized-info .benefits-title {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: var(--text);
+    margin-bottom: 5px;
+}
+
+.maximized-info .benefits-list {
+    margin: 0;
+    padding-left: 15px;
     color: var(--text-secondary);
 }
 
-.infrastructure-ul .infrastructure-card .infrastructure-card-name-training-center {
-    position: relative;
-    top: -23%;
-    font-size: 1.5em;
-    font-weight: 700;
-    color: var(--text-secondary);
+.maximized-info .benefits-list li {
+    margin: 3px 0;
+    font-size: 0.8em;
 }
 
-.infrastructure-ul .infrastructure-card p.second-text {
+.maximized-info .benefits-list .benefit-value {
+    color: var(--stat-value);
+    font-weight: bold;
+}
+
+.maximized-info .upgrade-section {
+    background: var(--surface-light);
+    border-radius: 10px;
+    padding: 12px;
+    /*margin-bottom: 15px;*/
+    margin: 15px;
+}
+
+.maximized-info .upgrade-title {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.maximized-info .upgrade-details {
+    font-size: 0.8em;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+}
+
+.maximized-info .upgrade-cost {
+    color: var(--accent-purple);
+    font-weight: bold;
+}
+
+.maximized-info .upgrade-requirements {
+    color: var(--text-secondary);
+    font-style: italic;
+}
+
+.upgrade-button {
+    background: var(--accent-blue);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upgrade-button:hover {
+    background: var(--accent-purple);
+    transform: translateY(-2px);
+}
+
+.upgrade-button:disabled {
+    background: var(--text-secondary);
+    cursor: not-allowed;
+    transform: none;
+}
+
+/*.infrastructure-ul .infrastructure-card p.second-text {
     font-size: .7em;
 }
 
@@ -625,7 +661,7 @@ body {
     opacity: 1;
     margin: 5px 0;
     animation: fadeIn 0.6s ease-in-out;
-}
+}*/
 
 @keyframes fadeIn {
     0% {

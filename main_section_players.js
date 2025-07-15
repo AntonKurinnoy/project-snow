@@ -48,8 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const closePlayerDetailBtn = document.querySelector('#main_section_players .close-player-detail');
     const playerDetailView = document.querySelector('#main_section_players .player-detail-view');
     const playerDetailContent = document.querySelector('#main_section_players .player-detail-content');
-    // const closeDetailBtn = playerDetailView.querySelector('.close-detail-btn');
-    // const swapPlayerBtn = playerDetailView.querySelector('.swap-player-btn');
 
     // Helper function to format currency for display
     function formatCurrency(value) {
@@ -66,19 +64,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const card = document.createElement('div');
         card.classList.add('player-card');
         card.dataset.playerId = player.id; // Store player ID for easy lookup
-
-        /*card.innerHTML = `
-                <img src="${player.avatar}" alt="${player.name}">
-                <div></div>
-                <div class="player-info-main" style="flex-grow: 1; align-content: center; margin-left: 15px;">
-                    <h4>${player.name}</h4>
-                    <p><span>${player.position}</span></p>
-                </div>
-                <div class="player-stats-mini"  style="align-content: center; text-align: end;">
-                    <span class="skill-value">Skill: ${player.skill}</span>
-                    <p class="market-value">${formatCurrency(player.marketValue)}</p>
-                </div>
-            `;*/
         card.innerHTML = `
             <img src="${player.avatar}" alt="${player.name} Avatar" class="player-card-avatar">
             <div class="player-info-main">
@@ -88,7 +73,6 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="player-stats-mini">
                 <div class="player-skill">Skill: ${player.skill}</div>
                 <div class="player-health">Health: ${player.health}</div>
-<!--                <div class="player-market-value">${formatCurrency(player.marketValue)}</div>-->
             </div>
         `;
         return card;
@@ -154,14 +138,6 @@ document.addEventListener("DOMContentLoaded", function () {
         // document.getElementById('detail-player-position').textContent = player.position;
         // document.getElementById('detail-player-skill').textContent = player.skill;
         // document.getElementById('detail-player-market-value').textContent = formatCurrency(player.marketValue);
-
-        // Placeholder for "Change Player" functionality
-        // This is where you would integrate more complex logic, e.g., opening a modal
-        // to select a replacement player and then updating the team data.
-        /*swapPlayerBtn.onclick = () => {
-            alert(`You clicked to change player ${player.name}. This is where the player swap interface would appear!`);
-            // Example: A real implementation might open a selection modal or navigate to a dedicated swap screen.
-        };*/
     }
 
     // Event listener for closing the player detail view
